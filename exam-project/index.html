@@ -1,29 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Liège waffles by Casper Elbech - the best dessert what you can get in Aarhus city.">
+<meta name="author" content="Group 5 - Eivydas Barysas, Thomas Aagard Poulsen, Gabriel-Florin Pojum, Dāvis Ābols">
+<title>Liège waffles</title>
 
-  <head>
+<!-- Bootstrap CSS -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Liège waffles by Casper Elbech - the best dessert what you can get in Aarhus city.">
-    <meta name="author" content="Group 5 - Eivydas Barysas, Thomas Aagard Poulsen, Gabriel-Florin Pojum, Dāvis Ābols">
+<!-- Styles -->
+<link href="css/styles.css" rel="stylesheet">
+</head>
 
-    <title>Liège waffles</title>
+<body>
+<div class="wrapper">
+ <!-- Burger menu navigation for mobile-->
 
-    <!-- Bootstrap CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Dot navigation for desktop-->
+  <nav id="cd-vertical-nav">
+    <ul id="dot-navigation">
+      <li> <a href="#home" data-number="1" class="js-scroll-trigger"><span class="cd-label">Intro</span> <span class="cd-dot"></span> </a> </li>
+      <li> <a href="#about" data-number="2" class="js-scroll-trigger"><span class="cd-label">About me</span> <span class="cd-dot"></span> </a> </li>
+      <li> <a href="#my-product" data-number="3" class="js-scroll-trigger"><span class="cd-label">My product</span> <span class="cd-dot"></span> </a> </li>
+      <li> <a href="#video" data-number="4" class="js-scroll-trigger"><span class="cd-label">Process</span> <span class="cd-dot"></span> </a> </li>
+      <li> <a href="#menu" data-number="5" class="js-scroll-trigger"><span class="cd-label">Menu</span> <span class="cd-dot"></span> </a> </li>
+      <li> <a href="#testimonials" data-number="6" class="js-scroll-trigger"><span class="cd-label">Testimonials</span> <span class="cd-dot"></span> </a> </li>
+      <li> <a href="#schedule" data-number="7" class="js-scroll-trigger"><span class="cd-label">Schedule</span> <span class="cd-dot"></span> </a> </li>
+      <li> <a href="#contact" data-number="8" class="js-scroll-trigger"><span class="cd-label">Contact</span> <span class="cd-dot"></span> </a> </li>
+    </ul>
+  </nav>
+  <!-- Intro screen -->
+  <header class="masthead text-center text-white d-flex" id="home">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="kadisoka-blue"> Delicious Liege waffles </h1>
+          <br>
+          <h2 id="by-casper">by Casper Elbech</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto"> <a id="find-out-more" class="btn btn-xl js-scroll-trigger" href="#about">Find Out More</a> </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- about section -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7"></div>
+        <div class="col-lg-5 mx-auto">
+          <h2 class="kadisoka-orange section-heading">About me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-6 mx-auto text-left">
+          <p class="paddings text-box text-faded mb-4">Hello, my name is Casper Elbech and I am a waffle chef that cooks in events and festivals so that I can share my love of the Liege waffle with others. You can contact me below or continue reading about my passion.<br>
+            <a href="#" data-toggle="modal" data-target="#about-me-modal" class="orange-button btn btn-light btn-xl">Read more</a></p>
+        </div>
+        <!-- About Me Expanded (Modal) -->
+        <div class="modal fade" id="about-me-modal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content"> 
+              
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h2 class="paddings-modal-header kadisoka-orange modal-title">About me</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="paddings modal-body">
+                <p>My waffle-passion began three years ago when I, Casper Elbech, came to visit Belgium for the first time. Though it was not the taste of waffles that drove me there.<br>
+                  <br>
+                  You see, when I first arrived in Belgium, I didn’t even like waffles – but that quickly changed. I was surprised to discover that the Belgian waffles are not as sweet and bland as the ones I was used to from home. Afterwards the thoughts of introducing Denmark to these delicious waffles began to intrigue me.<br>
+                  <br>
+                  So, in the fall of 2016, I was given the opportunity to present those waffles to Master Chef Jesper Koch, gastronomic Chef at Aarhus Central Food Market. Then, things started moving really fast for me and a few months later I had quit my job and began my waffle-adventure.<br>
+                  <br>
+                  See the article about me in Aarhus Update:<br>
+                  <a href="http://aarhusupdate.dk/liege-aarhus-anmeldelse/">http://aarhusupdate.dk/liege-aarhus-anmeldelse/</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-pics row">
+        	<div class="col-md-12 mx-auto">
+        		<img class="img-fluid" src="img/about-pic-mobile.jpg" alt="Casper Elbech">
+        	</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- My product section -->
+  <section id="my-product">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 mx-auto">
+          <h2 class="kadisoka-orange section-heading">My product</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-6 text-left">
+          <p class="paddings text-box text-faded mb-4">To the Belgian people, waffles are more than just a snack – they are a national treasure. Every region has their own recipe, which they pass down from generation to generation.<br>
+            <a href="#" data-toggle="modal" data-target="#my-product-modal" class="orange-button btn btn-light btn-xl">Read more</a></p>
+        </div>
+        <!-- My product Expanded (Modal) -->
+        <div class="modal fade" id="my-product-modal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content"> 
+              
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h2 class="paddings-modal-header kadisoka-orange modal-title">My product</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="paddings modal-body">
+                <p>To the Belgian people, waffles are more than just a snack – they are a national treasure. Every region has their own recipe, which they pass down from generation to generation.<br>
+                  <br>
+                  I have been blessed with the ability to collect a recipe from the eastern region of Belgium; Liège. There, the waffles are characterized by a special pearl sugar that contributes to the delicious caramelized crust. My waffles are served all natural, with berry cream, Belgian chocolate or a poached egg, bacon and garden cress.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="mobile-pics row">
+        	<div class="col-md-12 mx-auto">
+        		<img class="img-fluid" src="img/my-product-pic-mobile.jpg" alt="My products">
+        	</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Video section -->
+  <section id="video">
+    <div class="container">
+      <div class="row">
+        <div class="vertical-center col-lg-8 mx-auto">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h_A42-3PazE?rel=0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Menu section -->
+  <section id="menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 mx-auto">
+          <h2 class="kadisoka-orange section-heading">Menu</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-5">
+          <ul class="paddings text-box text-faded mb-4">
+            <li>• Classic waffle</li>
+            <li>• Waffle with chocolate</li>
+            <li>• Waffle with topping</li>
+            <li>• Waffle with homemade icecream</li>
+            <li>• Waffle with bacon and pouched egg</li>
+            <li>• Belgian pearl sugar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials section -->
+  <section id="testimonials">
 
-    <!-- Styles -->
-    <link href="css/styles.css" rel="stylesheet">
+  </section>
+</div>
 
-  </head>
+<!-- jQuery --> 
+<script src="jquery/jquery.min.js"></script> 
 
-  <body>
+<!-- Plugin JavaScript --> 
+<script src="jquery-easing/jquery.easing.min.js"></script> 
 
+<!-- Bootstrap core JavaScript --> 
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script> 
 
-    <!-- Scripts -->
-    <script src="js/scripts.js"></script>
-
-  </body>
-
+<!-- Scripts --> 
+<script src="js/scripts.js"></script>
+</body>
 </html>

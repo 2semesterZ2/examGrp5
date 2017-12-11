@@ -1,0 +1,245 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+/* added custom fonts */
+@font-face {
+	font-family: Kadisoka;
+	src: url(../fonts/kadisoka/kadisoka-script.ttf);
+}
+@font-face {
+	font-family: Octarine;
+	src: url(../fonts/octarine/Octarine-Light.otf);
+}
+body {
+	font-family: 'Octarine', sans-serif;
+	font-size: 20px;
+	background-color: #e4e4e4;
+	line-height: 1.35;
+}
+.wrapper {
+	overflow-x: hidden;
+}
+header {
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/landing-background-pic.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+/* mobile navigation */
+
+/* landing screen heading */
+.kadisoka-blue {
+	font-family: 'Kadisoka', serif;
+	color: #101729;
+	text-shadow: 0px 0px 12px #101729;
+	font-size: 6em;
+}
+/* hide dot menu on mobile devices */
+#dot-navigation {
+	display: none;
+}
+/* section headings */
+.section-heading {
+	font-size: 3.25em;
+	padding: 5% 0;
+}
+.kadisoka-orange {
+	font-family: 'Kadisoka', serif;
+	color: #cb781a;
+}
+#by-casper {
+	color: #101729;
+}
+/* button styles */
+#find-out-more {
+	background-color: rgba(158,154,155, 0.7);
+	border-radius: 0;
+	color: #101729;
+}
+#find-out-more:hover {
+	background-color: rgba(203,120,26, 0.7);
+}
+.orange-button {
+	background-color: rgba(203,120,26, 0.7);
+	border-radius: 0;
+	margin-top: 1em;
+}
+section {
+	min-width: 100%;
+	min-height: 100vh;
+}
+.text-box {
+	background-color: #e4e4e4;
+	border: 3px solid rgba(203,120,26, 0.7);
+}
+/* added paddings to text inside a box */
+.paddings {
+	padding: 4% 6%;
+}
+.paddings-modal-header {
+	padding: 0 4%;
+}
+.vertical-center {
+	min-height: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+ul {
+	list-style-type: none;
+}
+/* Modals */
+.modal-lg {
+	max-width: 95%;
+}
+.modal-title {
+	font-size: 2.2em;
+}
+.modal-content {
+	border-radius: 0;
+}
+.modal-body {
+	font-size: 1.15em;
+}
+.modal-body p {
+	text-align: left;
+}
+.fade {
+	transition-duration: 0.4s;
+}
+.modal-backdrop {
+	opacity: 0.9 !important;
+}
+.modal-dialog {
+	border: 3px solid rgba(203,120,26, 1);
+}
+.close {
+	opacity: 1;
+	color: rgba(203,120,26, 1);
+	font-size: 2em;
+}
+
+/* dot menu only on desktop */
+@media(min-width:1366px) {
+/* dot navigation */
+nav {
+	display: block;
+}
+#dot-navigation {
+	list-style-type: none;
+	display: block;
+}
+.cd-nav-trigger {
+	display: none;
+}
+#cd-vertical-nav {
+	display: none;
+	position: fixed;
+	right: 2.5%;
+	top: 45%;
+	bottom: auto;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 1072;
+}
+#cd-vertical-nav li {
+	text-align: right;
+}
+#cd-vertical-nav a {
+	display: inline-block;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+#cd-vertical-nav a:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#cd-vertical-nav a span {
+	float: left;
+	display: inline-block;
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	-ms-transform: scale(0.6);
+	-o-transform: scale(0.6);
+	transform: scale(0.6);
+}
+#cd-vertical-nav a:hover span {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+#cd-vertical-nav a:hover .cd-label {
+	opacity: 1;
+}
+#cd-vertical-nav a.is-selected .cd-dot {
+	transform: scale(1.15);
+}
+#cd-vertical-nav .cd-dot {
+	position: relative;
+	/* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+	top: 12px;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: rgba(203,120,26, 1);
+	-webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+	-moz-transition: -moz-transform 0.2s, background-color 0.5s;
+	transition: transform 0.2s, background-color 0.5s;
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+#cd-vertical-nav .cd-label {
+	position: relative;
+	margin-right: 10px;
+	margin-left: 5px;
+	padding: .4em .5em;
+	color: black;
+	background: white;
+	font-size: 1em;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
+	opacity: 0;
+	-webkit-transform-origin: 100% 50%;
+	-moz-transform-origin: 100% 50%;
+	-ms-transform-origin: 100% 50%;
+	-o-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+/* modal smaller on desktop */
+.modal-lg {
+	max-width: 55%;
+}
+#about {
+	background: url(../img/about-pic.png) no-repeat;
+	background-size: cover;
+}
+#my-product {
+	background: url(../img/my-product-pic.png) no-repeat;
+	background-size: cover;
+}
+#menu {
+	background: url(../img/menu-pic.png) no-repeat;
+	background-size: cover;
+}
+.section-heading {
+	font-size: 3.25em;
+	padding: 15% 0;
+}
+.mobile-pics {
+	display: none;
+}
+}
