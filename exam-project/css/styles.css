@@ -29,6 +29,9 @@ header {
 	background: url(../img/landing-background-pic.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
+
+
+
 /* mobile navigation */
 
 /* landing screen heading */
@@ -235,6 +238,7 @@ nav {
 	background: url(../img/menu-pic.png) no-repeat;
 	background-size: cover;
 }
+	
 .section-heading {
 	font-size: 3.25em;
 	padding: 15% 0;
@@ -243,3 +247,43 @@ nav {
 	display: none;
 }
 }
+/* footer start */
+
+footer {
+	background-image: url("../img/footer_texture1.jpg");
+	height: 350px;
+	width: 100%;
+	padding: 2%;
+	clear: none;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#footer_text{
+	float:left;
+	margin-right:60%;
+	font-size: 1.8em;
+	width: 50%;
+	height: 4%;
+	
+}
+#bike {
+	max-height: 40%;
+	max-width: 40%;
+}
+#bikebox{
+	margin-left:50%;
+	float: left; 
+	height: 50%;
+	width: 50%;
+	margin-bottom: 50%;
+}
+#icon1{
+	max-width: 100%;
+}
+#icon2{
+	max-width: 100%;
+}
+#footer_text p {color:white;}
+
+/* footer end*/
