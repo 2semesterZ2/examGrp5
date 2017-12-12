@@ -15,54 +15,15 @@
 		}
 	});
 
-	//#dot navigation appears after scrolling
-	var fixed = false;
-	$(document).scroll(function () {
-		if ($(this).scrollTop() > 250) {
-			if (!fixed) {
-				fixed = true;
-				$('#cd-vertical-nav').show("normal", function () {
-					$('#cd-vertical-nav').css({
-						position: 'fixed',
-						display: 'block'
-					});
-				});
-			}
-			// and disappers when on top
-		} else {
-			if (fixed) {
-				fixed = false;
-				$('#cd-vertical-nav').hide("normal", function () {
-					$('#cd-vertical-nav').css({
-						display: 'none'
-					});
-				});
-			}
-		}
-	});
+// When the user scrolls down, show dot navigation
+window.onscroll = function() {scrollFunction()};
 
-})(jQuery); // End of use strict
+function scrollFunction() {
+    if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+        document.getElementById("cd-vertical-nav").style.display = "block";
+    } else {
+        document.getElementById("cd-vertical-nav").style.display = "none";
+    }
+}
 
-$(document).ready(function () {
-	//This is for the dot navigation
-	var contentSections = $('.cd-section');
-	var navigationItems = $('#cd-vertical-nav a');
-
-	function updateNavigation() {
-		contentSections.each(function () {
-			$this = $(this);
-			var activeSection = $('#cd-vertical-nav a[href="#' + $this.attr('id') + '"]').data('number') - 1;
-			if (($this.offset().top - $(window).height() / 4 < $(window).scrollTop()) && ($this.offset().top + $this.height() - $(window).height() / 4 > $(window).scrollTop())) {
-				navigationItems.eq(activeSection).addClass('is-selected');
-				console.log($this);
-			} else {
-				navigationItems.eq(activeSection).removeClass('is-selected');
-			}
-		});
-	}
-
-	//this is to set the selected section on load
-	updateNavigation();
-	//this changes the selected dot as one scrolls 
-	$(window).scroll(updateNavigation);
-});
+		})(jQuery); // End of use strict
