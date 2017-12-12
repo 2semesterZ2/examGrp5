@@ -10,29 +10,58 @@
 <!-- Bootstrap CSS -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+<!-- favicon -->
+<link rel="icon" href="img/favicon.png" type="image/png"/>
+
+<!-- font awesome -->
+<!-- Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 <!-- Styles -->
 <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
 <div class="wrapper">
- <!-- Burger menu navigation for mobile-->
-
-  <!-- Dot navigation for desktop-->
-  <nav id="cd-vertical-nav">
-    <ul id="dot-navigation">
-      <li> <a href="#home" data-number="1" class="js-scroll-trigger"><span class="cd-label">Intro</span> <span class="active cd-dot"></span> </a> </li>
-      <li> <a href="#about" data-number="2" class="js-scroll-trigger"><span class="cd-label">About me</span> <span class="cd-dot"></span> </a> </li>
-      <li> <a href="#my-product" data-number="3" class="js-scroll-trigger"><span class="cd-label">My product</span> <span class="cd-dot"></span> </a> </li>
-      <li> <a href="#video" data-number="4" class="js-scroll-trigger"><span class="cd-label">Process</span> <span class="cd-dot"></span> </a> </li>
-      <li> <a href="#menu" data-number="5" class="js-scroll-trigger"><span class="cd-label">Menu</span> <span class="cd-dot"></span> </a> </li>
-      <li> <a href="#testimonials" data-number="6" class="js-scroll-trigger"><span class="cd-label">Testimonials</span> <span class="cd-dot"></span> </a> </li>
-      <li> <a href="#schedule" data-number="7" class="js-scroll-trigger"><span class="cd-label">Schedule</span> <span class="cd-dot"></span> </a> </li>
-      <li> <a href="#contact" data-number="8" class="js-scroll-trigger"><span class="cd-label">Contact</span> <span class="cd-dot"></span> </a> </li>
-    </ul>
-  </nav>
   <!-- Intro screen -->
-  <header class="masthead text-center text-white d-flex" id="home">
+  <section id="home">
+      <!-- Navigation -->
+    <nav id="top-nav" class="navbar navbar-expand-lg navbar-dark fixed-top nav-bg">
+      <div class="container">
+        <a class="js-scroll-trigger navbar-brand" href="#home">
+          <img src="img/logo.jpg" width="60" height="60" alt="Liege logo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="js-scroll-trigger nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="js-scroll-trigger nav-link" href="#my-product">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="js-scroll-trigger nav-link" href="#video">Process</a>
+            </li>
+                        <li class="nav-item">
+              <a class="js-scroll-trigger nav-link" href="#menu">Menu</a>
+            </li>
+                        <li class="nav-item">
+              <a class="js-scroll-trigger nav-link" href="#testimonials">Testimonials</a>
+            </li>
+                        <li class="nav-item">
+              <a class="js-scroll-trigger nav-link" href="#schedule" >Schedule</a>
+            </li>
+                        <li class="nav-item">
+              <a class="js-scroll-trigger nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   <header class="masthead text-center text-white d-flex">
     <div class="container my-auto">
       <div class="row">
         <div class="col-lg-12 mx-auto">
@@ -42,10 +71,13 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-8 mx-auto"> <a id="find-out-more" class="btn btn-xl js-scroll-trigger" href="#about">Find Out More</a> </div>
+                <div class="col-lg-12 mx-auto">
+        <a id="find-out-more" class="btn btn-xl js-scroll-trigger" href="#about"><i class="fa fa-angle-down" style="font-size:36px"></i> </a> </div>
+      </div>
       </div>
     </div>
   </header>
+	</section>
   
   <!-- about section -->
   <section id="about">
@@ -59,12 +91,12 @@
       <div class="row">
         <div class="col-xl-4"></div>
         <div class="col-xl-6 mx-auto text-left">
-          <p class="paddings text-box text-faded mb-4">Hello, my name is Casper Elbech and I am a waffle chef that cooks in events and festivals so that I can share my love of the Liege waffle with others. You can contact me below or continue reading about my passion.<br>
+          <p class="paddings text-box text-faded mb-4">Hello, my name is Casper Elbech and I am a freelance waffle chef that cooks in private events and festivals so that I can share my love of the Liège waffle with others. You can contact me below or continue reading about my passion.<br>
             <a href="#" data-toggle="modal" data-target="#about-me-modal" class="orange-button btn btn-light btn-xl">Read more</a></p>
         </div>
         <!-- About Me Expanded (Modal) -->
         <div class="modal fade" id="about-me-modal">
-          <div class="modal-dialog modal-lg">
+          <div class="about-me-modal modal-dialog modal-lg">
             <div class="modal-content"> 
               
               <!-- Modal Header -->
@@ -112,7 +144,7 @@
         </div>
         <!-- My product Expanded (Modal) -->
         <div class="modal fade" id="my-product-modal">
-          <div class="modal-dialog modal-lg">
+          <div class="my-product-modal modal-dialog modal-lg">
             <div class="modal-content"> 
               
               <!-- Modal Header -->
@@ -143,7 +175,14 @@
   <section id="video">
     <div class="container">
       <div class="row">
-        <div class="vertical-center col-xl-8 mx-auto">
+        <div class="col-xl-6"></div>
+        <div class="col-xl-6 mx-auto">
+          <h2 class="kadisoka-orange section-heading">Process</h2>
+          <p>See how my waffles are being made from the scratch.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-8 mx-auto">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h_A42-3PazE?rel=0" allowfullscreen></iframe>
           </div>
@@ -185,8 +224,8 @@
   <!-- Testimonials section -->
 <section id="testimonials">
           <div class="container">
-       <div class="row">
-        <div class="col-xl-1"></div>
+      <div class="row">
+        <div class="col-xl-7"></div>
         <div class="col-xl-5 mx-auto">
           <h2 class="kadisoka-orange section-heading">Testimonials</h2>
         </div>
@@ -198,70 +237,131 @@
             <div class="carousel-caption">
               <div class="row">
                 <div class="col-xl-12 mx-auto">
-                  <p>Well incremented. Comes with recommended workout. I'm using it to help with bladder leakage issues that I've been experiencing since a recent vasectomy. <br>- willi</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <div class="row">
-                <div class="col-xl-12 mx-auto">
-                  <p>Well incremented. Comes with recommended workout. I'm using it to help with bladder leakage issues that I've been experiencing since a recent vasectomy. <br>- willi</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <div class="row">
-                <div class="col-xl-12 mx-auto">
-                  <p>Well incremented. Comes with recommended workout. I'm using it to help with bladder leakage issues that I've been experiencing since a recent vasectomy. <br>- willi</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <p class="paddings text-box text-faded mb-4 review">“Great waffles and amazing service! So crispy and fresh out of the iron, with cream or chocolate.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Ole Dahl Valgreen, 9 November 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
+        </a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <div class="row">
+                <div class="col-xl-12 mx-auto">
+                  <p class="paddings text-box text-faded mb-4 review">“There is not much to say beyond: YUM! You are doing well, Casper.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Camilla Bloch Vorum, 19 November 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
         </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <div class="row">
+                <div class="col-xl-12 mx-auto">
+                  <p class="paddings text-box text-faded mb-4 review">“These waffles are the best waffles I have ever tasted.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Amanda Nielsen, 15 October 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 	</div>
 </section>
 <!-- My schedule -->
 <section id="schedule">
+  <div class="container">
+      <div class="row">
+        <div class="col-xl-6 mx-auto text-center">
+          <h2 class="text-center kadisoka-orange section-heading">My schedule</h2>
+          <p>Here you can view my schedule - on which days I am available and on which not.</p>
+        </div>
+      </div>
 <div class="googleCalendar">
-         <div class="vertical-center col-xl-8 mx-auto">
+         <div class="col-xl-8 mx-auto">
           <div class="embed-responsive embed-responsive-16by9">
-  <iframe src="https://calendar.google.com/calendar/embed?title=Put%20your%20Title%20here&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=8d3fc8l9g04n7r9im45fsn08ak%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=America%2FNew_York" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+ <iframe id="g-calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=2&amp;hl=da&amp;bgcolor=%23cc9933&amp;src=abolzzy%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FRiga" style="border:solid 1px #777" width="800" height="240" frameborder="0" scrolling="no"></iframe>
 			 </div>
 	</div>
 </div>
+</div>
 </section>
 
-</div>
-
-<!---- footer ----->
-
+<!-- Contact -->
+<section id="contact">
+<div class="container">
+      <div class="row">
+        <div class="col-xl-8 mx-auto text-center">
+          <h2 class="text-center kadisoka-orange section-heading">Contact me</h2>
+          <p>You are welcome to write me an e-mail with a description of your wishes and I will contact with you within 24 hours. Hope to see you soon! :)</p>
+        </div>
+      </div>
+	<div class="row">
+		<form role="form" id="contact-form" class="contact-form">
+                    <div class="row">
+                		<div class="col-xl-6">
+                  		<div class="form-group">
+                            <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
+                  		</div>
+                  	</div>
+                    	<div class="col-xl-6">
+                  		<div class="form-group">
+                            <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+                  		</div>
+                  	</div>
+                  	</div>
+                  	<div class="row">
+                  		<div class="col-xl-12">
+                  		<div class="form-group">
+                            <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
+                  		</div>
+                  	</div>
+                    </div>
+                    <div class="row">
+                    <div class="text-center col-xl-12">
+                  <button type="submit" class="btn main-btn">Send mail</button>
+                  </div>
+                  </div>
+                </form>
+	</div>
+	</div>
+  </section>
+<!-- footer -->
 <footer>
-	
-		<div id="footer_text">
-		<p>My phone is +45 50 48 32 03</p>
-		<p>My email is liegevaffel@gmail.com </p>
-			<p>#liegevaffel</p>
-			<a href="https://www.facebook.com/"><img src="img/facebook_icon1.png"  alt="facebook" id="icon1"/> </a> <a href="https://www.instagram.com/"> <img src="img/instagram_icon1.png"  alt="instragram" id="icon2"/> </a>
-		</div>
-		<section id="bikebox">
-<img src="img/transparent_bike1.png" alt="Liege bike" id="bike"/>
-			</section>
+		<ul id="footer-ul" class="text-center">
+              <li"><a href="https://www.facebook.com/liegevaffel/"><img src="img/facebook_icon1.png" alt="Facebook Icon"/></a></li>
+      <li"><a href="https://www.instagram.com/liegevaffel/"><img src="img/instagram_icon1.png" alt="Instagram Icon"/></a></li>
+		<li><a href="tel:+45 50 48 32 03">+45 50 48 32 03</a></li>
+		<li><a href="mailto:&#108;&#105;&#101;&#103;&#101;&#118;&#097;&#102;&#102;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#108;&#105;&#101;&#103;&#101;&#118;&#097;&#102;&#102;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a> </li>
+			<li>#liegevaffel</li>
+			<li><img src="img/transparent_bike1.png" alt="Liege bike" id="bike"/></li>
+			</ul>
+			<div class="row">
+				<div class="col-xl-3 mx-auto text-center">
+					<span>&copy; All rights reserved, 2017</span>
+				</div>
+			</div>
 
 </footer>
+</div>
 
 <!-- jQuery --> 
 <script src="jquery/jquery.min.js"></script> 

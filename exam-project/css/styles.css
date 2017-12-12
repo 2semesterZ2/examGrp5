@@ -1,7 +1,17 @@
-body, html {
+@charset "utf-8";
+/* CSS Document */
+html {
+	min-height: 100%;
+	position: relative;
 	width: 100%;
-	height: 100%;
+}
+body {
+	width: 100%;
 	margin: 0;
+	font-family: 'Octarine', sans-serif;
+	font-size: 16px;
+	line-height: 1.35;
+	background-color: #e4e4e4;
 }
 /* added custom fonts */
 @font-face {
@@ -12,34 +22,37 @@ body, html {
 	font-family: Octarine;
 	src: url(../fonts/octarine/Octarine-Light.otf);
 }
-body {
-	font-family: 'Octarine', sans-serif;
-	font-size: 20px;
-	background-color: #e4e4e4;
-	line-height: 1.35;
-}
 .wrapper {
 	overflow-x: hidden;
 }
 header {
 	position: relative;
 	display: table;
-	width: 100%;
-	height: 100vh;
+	min-width: 100%;
+	min-height: 85vh;
+}
+#home {
 	background: url(../img/landing-background-pic.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
-
-
-
-/* mobile navigation */
-
+.nav-bg {
+	background-color: rgba(158,154,155, 0.7);
+}
+/* hide desktop navigation on mobile devices */
+	#desktop-navigation {
+		display: none;
+	}
 /* landing screen heading */
 .kadisoka-blue {
 	font-family: 'Kadisoka', serif;
 	color: #101729;
-	text-shadow: 0px 0px 12px #101729;
-	font-size: 3.75em;
+	font-size: 4em;
+}
+.mobile-pad {
+	padding-top: 22.5%;
+}
+#process-heading {
+	padding-bottom: 0;
 }
 /* hide dot menu on mobile devices */
 #dot-navigation {
@@ -48,7 +61,8 @@ header {
 /* section headings */
 .section-heading {
 	font-size: 3.25em;
-	padding: 5% 0;
+	padding: 22.5% 0 2%;
+	text-align: center;
 }
 .kadisoka-orange {
 	font-family: 'Kadisoka', serif;
@@ -59,9 +73,8 @@ header {
 }
 /* button styles */
 #find-out-more {
-	background-color: rgba(158,154,155, 0.7);
 	border-radius: 0;
-	color: #101729;
+	color: black;
 }
 #find-out-more:hover {
 	background-color: rgba(203,120,26, 0.7);
@@ -71,9 +84,13 @@ header {
 	border-radius: 0;
 	margin-top: 1em;
 }
+.orange-button:hover {
+	background-color: rgba(203,120,26, 1);
+}
 section {
 	min-width: 100%;
 	min-height: 100vh;
+	background-color: #e4e4e4;
 }
 .text-box {
 	background-color: #e4e4e4;
@@ -106,7 +123,7 @@ ul {
 	border-radius: 0;
 }
 .modal-body {
-	font-size: 1.15em;
+	font-size: 1em;
 }
 .modal-body p {
 	text-align: left;
@@ -125,6 +142,13 @@ ul {
 	color: rgba(203,120,26, 1);
 	font-size: 2em;
 }
+.review {
+	font-style: italic;
+}
+#my-schedule {
+	padding: 2.5% 0 5%;
+}
+
 /* Downloaded from https://www.codeseek.co/ */
 .card {
 	margin: 0 auto;
@@ -133,7 +157,7 @@ ul {
 	width: 100%;
 }
 .card .carousel-item {
-	height: 62.5vh;
+	height: 35vh;
 }
 .card .carousel-caption .col-sm-3 {
 	display: flex;
@@ -143,10 +167,102 @@ ul {
 	color: black;
 	bottom: 0;
 }
-@media(min-width:1366px) {
-/* landing screen heading */
+/* contact section */
+#contact-me {
+	padding: 2.5% 0 5%;
+}
+/* contact form */
+.contact-form {
+	width: 85%;
+	margin: 15px auto;
+	padding-bottom: .5%;
+}
+.form-group {
+	margin-bottom: 0.5rem;
+}
+.contact-form .textarea {
+	min-height: 220px;
+	resize: none;
+}
+.form-control {
+	box-shadow: none;
+	border-color: #eee;
+	height: 49px;
+	border-radius: 0;
+}
+.form-control:focus {
+	box-shadow: none;
+	border-color: rgba(203,120,26, 0.7);
+}
+.form-control-feedback {
+	line-height: 50px;
+}
+.main-btn {
+	background: rgba(203,120,26, 0.7);
+	border-color: rgba(203,120,26, 0.7);
+	color: white;
+	border-radius: 0;
+}
+.main-btn:hover {
+	background: rgba(203,120,26, 1);
+	color: #fff;
+}
+.form-control-feedback {
+	line-height: 50px;
+	top: 0px;
+}
+/* footer start */
+footer {
+	width: 100%;
+	padding: .5%;
+	clear: none;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	bottom: 0;
+	border-top: solid 2px;  
+}
+#footer-ul img {
+	max-width: 10%;
+}
+#footer-ul {
+	padding: 2.5% 9%;
+}
+#footer-ul img:hover {
+	filter: opacity(0.8);
+}
+/* footer end */
+@media(max-width:768px) {
+	#g-calendar {
+		height: 400px;
+	}
+}
+@media(min-width:768px) {
+.card .carousel-item {
+	height: 22.5vh;
+}
 .kadisoka-blue {
 	font-size: 6em;
+}
+.section-heading {
+	padding: 17.5% 0 2%;
+}
+}
+@media(min-width:1024px) {
+}
+#footer-ul li {
+	display: inline;
+	padding: 0 2.5%;
+}
+#footer-ul {
+	padding: 0 9%;
+}
+@media(min-width:1366px) {
+/* landing screen heading */
+	#desktop-navigation {
+		display: block;
+	}
+.mobile-pad {
+	padding-top: 0;
 }
 /* dot navigation */
 nav {
@@ -253,7 +369,10 @@ nav {
 	transform-origin: 100% 50%;
 }
 /* modal smaller on desktop */
-.modal-lg {
+.about-me-modal {
+	max-width: 90%;
+}
+.my-product-modal {
 	max-width: 55%;
 }
 #about {
@@ -264,14 +383,20 @@ nav {
 	background: url(../img/my-product-pic.png) no-repeat;
 	background-size: cover;
 }
+#video {
+	background: url(../img/video-pic.png) no-repeat;
+	background-size: cover;
+}
 #menu {
 	background: url(../img/menu-pic.png) no-repeat;
 	background-size: cover;
 }
-	
-.section-heading {
-	font-size: 3.25em;
-	padding: 15% 0;
+#testimonials {
+	background: url(../img/testimonials-pic.png) no-repeat;
+	background-size: cover;
+}
+#testimonials-heading {
+	padding-bottom: 0
 }
 .mobile-pics {
 	display: none;
@@ -280,45 +405,20 @@ nav {
 	bottom: 35%;
 }
 .card .carousel-item {
-	height: 70vh;
+	height: 45vh;
 }
-/* footer start */
-
-footer {
-	background-image: url("../img/footer_texture1.jpg");
-	height: 350px;
-	width: 100%;
-	padding: 2%;
-	clear: none;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+.section-heading {
+	text-align: left;
 }
-
-#footer_text{
-	float:left;
-	margin-right:60%;
-	font-size: 1.8em;
-	width: 50%;
-	height: 4%;
-	
+ .contact-form {
+ 	width: 50%;
+	margin: 15px auto;
 }
-#bike {
-	max-height: 40%;
-	max-width: 40%;
+@media(min-width:1920px) {
+ .contact-form {
+ 	padding-bottom: 7.5%;
 }
-#bikebox{
-	margin-left:50%;
-	float: left; 
-	height: 50%;
-	width: 50%;
-	margin-bottom: 50%;
 }
-#icon1{
-	max-width: 100%;
-}
-#icon2{
-	max-width: 100%;
-}
-#footer_text p {color:white;}
-
-/* footer end*/
+body {
+	font-size: 20px;
+	}
