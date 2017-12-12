@@ -282,43 +282,33 @@ nav {
 .card .carousel-item {
 	height: 70vh;
 }
-/* footer start */
-
-footer {
-	background-image: url("../img/footer_texture1.jpg");
-	height: 350px;
-	width: 100%;
-	padding: 2%;
-	clear: none;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-#footer_text{
-	float:left;
-	margin-right:60%;
-	font-size: 1.8em;
-	width: 50%;
-	height: 4%;
 	
+/*footer start*/
+	
+footer {
+    width: 100%;
+    padding: 2%;
+    clear: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: 0;
+    border-top: solid 2px;  
 }
-#bike {
-	max-height: 40%;
-	max-width: 40%;
+#footer-ul img {
+    max-width: 10%;
 }
-#bikebox{
-	margin-left:50%;
-	float: left; 
-	height: 50%;
-	width: 50%;
-	margin-bottom: 50%;
+#footer-ul {
+    padding: 2.5% 9%;
 }
-#icon1{
-	max-width: 100%;
+#footer-ul img:hover {
+    filter: opacity(0.8);
 }
-#icon2{
-	max-width: 100%;
+#footer-ul li {
+    display: inline;
+    padding: 0 2.5%;
 }
-#footer_text p {color:white;}
+#footer-ul {
+    padding: 0 9%;
+}
 
 /* footer end*/
