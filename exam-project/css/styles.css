@@ -29,7 +29,7 @@ header {
 	position: relative;
 	display: table;
 	min-width: 100%;
-	min-height: 85vh;
+	min-height: 100vh;
 }
 #home {
 	background: url(../img/landing-background-pic.jpg) no-repeat center center fixed;
@@ -47,6 +47,7 @@ header {
 	font-family: 'Kadisoka', serif;
 	color: #101729;
 	font-size: 4em;
+	padding-top: 10%;
 }
 .mobile-pad {
 	padding-top: 22.5%;
