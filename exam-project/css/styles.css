@@ -422,3 +422,33 @@ nav {
 body {
 	font-size: 20px;
 	}
+	
+/*footer start*/
+	
+footer {
+    width: 100%;
+    padding: 2%;
+    clear: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: 0;
+    border-top: solid 2px;  
+}
+#footer-ul img {
+    max-width: 10%;
+}
+#footer-ul {
+    padding: 2.5% 9%;
+}
+#footer-ul img:hover {
+    filter: opacity(0.8);
+}
+#footer-ul li {
+    display: inline;
+    padding: 0 2.5%;
+}
+#footer-ul {
+    padding: 0 9%;
+}
+
+/* footer end*/
