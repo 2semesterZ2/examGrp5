@@ -383,8 +383,10 @@ if (!$errName && !$errEmail && !$errMessage) {
   </section>
 <!-- footer -->
 <footer>
-              <div id="language"><a href="index.html">en</a>
-          <a href="index-lv.html" class="active-lang">dk</a>
+              <div id="language" class="text-center">
+                <span>Language:</span>
+                <a href="index.php">en</a>
+          <a href="dk_index.php" class="active-lang">dk</a>
         </div>
 		<ul id="footer-ul" class="text-center">
               <li"><a href="https://www.facebook.com/liegevaffel/"><img src="img/facebook_icon1.png" alt="Facebook Icon"/></a></li>
