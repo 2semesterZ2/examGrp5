@@ -53,10 +53,11 @@ if (!$errName && !$errEmail && !$errMessage) {
 
 <body>
 <div class="wrapper">
+  <main role="main">
   <!-- Intro screen -->
   <section id="home">
       <!-- Navigation -->
-    <nav id="top-nav" class="navbar navbar-expand-lg navbar-dark fixed-top nav-bg">
+    <nav role="navigation" id="top-nav" class="navbar navbar-expand-lg navbar-dark fixed-top nav-bg">
       <div class="container">
         <a class="js-scroll-trigger navbar-brand" href="#home">
           <img src="img/logo.jpg" width="60" height="60" alt="Liege logo"/>
@@ -137,6 +138,7 @@ if (!$errName && !$errEmail && !$errMessage) {
               
               <!-- Modal body -->
               <div class="paddings modal-body">
+                          <article>
                 <p>My waffle-passion began three years ago when I, Casper Elbech, came to visit Belgium for the first time. Though it was not the taste of waffles that drove me there.<br>
                   <br>
                   You see, when I first arrived in Belgium, I didn’t even like waffles – but that quickly changed. I was surprised to discover that the Belgian waffles are not as sweet and bland as the ones I was used to from home. Afterwards the thoughts of introducing Denmark to these delicious waffles began to intrigue me.<br>
@@ -145,6 +147,7 @@ if (!$errName && !$errEmail && !$errMessage) {
                   <br>
                   See the article about me in Aarhus Update:<br>
                   <a href="http://aarhusupdate.dk/liege-aarhus-anmeldelse/">http://aarhusupdate.dk/liege-aarhus-anmeldelse/</a></p>
+                </article>
               </div>
             </div>
           </div>
@@ -185,9 +188,11 @@ if (!$errName && !$errEmail && !$errMessage) {
               
               <!-- Modal body -->
               <div class="paddings modal-body">
+                <article>
                 <p>To the Belgian people, waffles are more than just a snack – they are a national treasure. Every region has their own recipe, which they pass down from generation to generation.<br>
                   <br>
                   I have been blessed with the ability to collect a recipe from the eastern region of Belgium; Liège. There, the waffles are characterized by a special pearl sugar that contributes to the delicious caramelized crust. My waffles are served all natural, with berry cream, Belgian chocolate or a poached egg, bacon and garden cress.</p>
+                  </article>
               </div>
             </div>
           </div>
@@ -266,14 +271,14 @@ if (!$errName && !$errEmail && !$errMessage) {
             <div class="carousel-caption">
               <div class="row">
                 <div class="col-xl-12 mx-auto">
-                  <p class="paddings text-box text-faded mb-4 review">“Great waffles and amazing service! So crispy and fresh out of the iron, with cream or chocolate.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Ole Dahl Valgreen, 9 November 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <blockquote class="paddings text-box text-faded mb-4 review">“Great waffles and amazing service! So crispy and fresh out of the iron, with cream or chocolate.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Ole Dahl Valgreen, 9 November 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </a></p>
+        </a></blockquote>
                 </div>
               </div>
             </div>
@@ -282,14 +287,14 @@ if (!$errName && !$errEmail && !$errMessage) {
             <div class="carousel-caption">
               <div class="row">
                 <div class="col-xl-12 mx-auto">
-                  <p class="paddings text-box text-faded mb-4 review">“There is not much to say beyond: YUM! You are doing well, Casper.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Camilla Bloch Vorum, 19 November 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <blockquote class="paddings text-box text-faded mb-4 review">“There is not much to say beyond: YUM! You are doing well, Casper.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Camilla Bloch Vorum, 19 November 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </a></p>
+        </a></blockquote>
                 </div>
               </div>
             </div>
@@ -298,13 +303,13 @@ if (!$errName && !$errEmail && !$errMessage) {
             <div class="carousel-caption">
               <div class="row">
                 <div class="col-xl-12 mx-auto">
-                  <p class="paddings text-box text-faded mb-4 review">“These waffles are the best waffles I have ever tasted.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Amanda Nielsen, 15 October 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <blockquote class="paddings text-box text-faded mb-4 review">“These waffles are the best waffles I have ever tasted.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Amanda Nielsen, 15 October 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </a></p>
+        </a></blockquote>
                 </div>
               </div>
             </div>
@@ -333,7 +338,7 @@ if (!$errName && !$errEmail && !$errMessage) {
           <div class="row">
          <div class="col-xl-8 mx-auto">
           <div class="embed-responsive embed-responsive-16by9">
- <iframe id="g-calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=2&amp;hl=da&amp;bgcolor=%23cc9933&amp;src=abolzzy%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FRiga" style="border:solid 1px #777" width="800" height="240" frameborder="0" scrolling="no"></iframe>
+ <iframe id="g-calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;hl=da&amp;bgcolor=%23cc9933&amp;src=liegevaffel%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FRiga" style="border:solid 1px #777" width="800" height="240" frameborder="0" scrolling="no"></iframe>
 			 </div>
 	</div>
 </div>
@@ -382,8 +387,8 @@ if (!$errName && !$errEmail && !$errMessage) {
 <!-- footer -->
 <footer>
               <div id="language" class="text-center">
-                <a href="index.php"><img src="img/english-flag-icon.ico" alt="english-flag-icon"></a>
-          <a href="dk_index.php"><img src="img/danish-flag-icon.ico" alt="danish-flag-icon"></a>
+                <a href="index.php" hreflang="en"><img src="img/english-flag-icon.ico" alt="english-flag-icon"></a>
+          <a href="dk_index.php" hreflang="da"><img src="img/danish-flag-icon.ico" alt="danish-flag-icon"></a>
         </div>
 		<ul id="footer-ul" class="text-center">
               <li"><a href="https://www.facebook.com/liegevaffel/"><img src="img/facebook_icon1.png" alt="Facebook Icon"/></a></li>
@@ -395,9 +400,12 @@ if (!$errName && !$errEmail && !$errMessage) {
 			</ul>
 			<div class="row">
 				<div class="col-xl-3 mx-auto text-center">
-					<span>&copy; All rights reserved, 2017</span>
+					<small>
+            Gabriel Florin-Pojum, Eivydas Barysas, Thomas Aagaard Poulsen, Dāvis Ābols
+            <br>&copy; All rights reserved, 2017</small>
 				</div>
 			</div>
+    </main>
 </div>
 
 <!-- jQuery --> 
@@ -410,6 +418,6 @@ if (!$errName && !$errEmail && !$errMessage) {
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script> 
 
 <!-- Scripts --> 
-<script src="js/scripts.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
 </html>
