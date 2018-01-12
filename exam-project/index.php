@@ -260,7 +260,7 @@ if (!$errName && !$errEmail && !$errMessage) {
           <h2 id="testimonials-heading" class="text-center kadisoka-orange section-heading">Testimonials</h2>
       </div>
   <div class="card col-xl-11 mt-2">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="100000">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="w-100 carousel-inner" role="listbox">
           <div class="carousel-item active">
             <div class="carousel-caption">
