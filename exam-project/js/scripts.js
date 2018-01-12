@@ -1,3 +1,4 @@
+// downloaded from https://github.com/BlackrockDigital/startbootstrap-creative
 (function ($) {
 	"use strict"; // Start of use strict  
 
@@ -17,6 +18,7 @@
 
 		})(jQuery); // End of use strict
 
+// downloaded from https://bootsnipp.com/snippets/featured/contact-us-form-with-validation
 $('#contact-form').bootstrapValidator({
 //        live: 'disabled',
         message: 'This value is not valid',
