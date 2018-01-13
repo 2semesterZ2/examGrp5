@@ -33,7 +33,7 @@ if (!$errName && !$errEmail && !$errMessage) {
  }
 ?>
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -53,7 +53,7 @@ if (!$errName && !$errEmail && !$errMessage) {
 
 <body>
 <div class="wrapper">
-    <main role="main">
+  <main role="main">
   <!-- Intro screen -->
   <section id="home">
       <!-- Navigation -->
@@ -68,25 +68,25 @@ if (!$errName && !$errEmail && !$errMessage) {
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="js-scroll-trigger nav-link" href="#about">Om</a>
+              <a class="js-scroll-trigger nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="js-scroll-trigger nav-link" href="#my-product">Produkt</a>
+              <a class="js-scroll-trigger nav-link" href="#my-product">Product</a>
             </li>
             <li class="nav-item">
-              <a class="js-scroll-trigger nav-link" href="#video">Proces</a>
+              <a class="js-scroll-trigger nav-link" href="#video">Process</a>
             </li>
                         <li class="nav-item">
               <a class="js-scroll-trigger nav-link" href="#menu">Menu</a>
             </li>
                         <li class="nav-item">
-              <a class="js-scroll-trigger nav-link" href="#testimonials">Anbefaling</a>
+              <a class="js-scroll-trigger nav-link" href="#testimonials">Testimonials</a>
             </li>
                         <li class="nav-item">
-              <a class="js-scroll-trigger nav-link" href="#schedule" >Tidsplan</a>
+              <a class="js-scroll-trigger nav-link" href="#schedule" >Schedule</a>
             </li>
                         <li class="nav-item">
-              <a class="js-scroll-trigger nav-link" href="#contact">Kontakt</a>
+              <a class="js-scroll-trigger nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -96,7 +96,7 @@ if (!$errName && !$errEmail && !$errMessage) {
     <div class="container my-auto">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h1 class="kadisoka-blue">Freelance vaffel chef</h1>
+          <h1 class="kadisoka-blue">Freelance waffle chef</h1>
           <br>
           <h2 id="by-casper">Casper Elbech</h2>
         </div>
@@ -116,14 +116,14 @@ if (!$errName && !$errEmail && !$errMessage) {
       <div class="row">
         <div class="col-xl-7"></div>
         <div class="col-xl-5 mx-auto">
-          <h2 class="kadisoka-orange section-heading">Om mig</h2>
+          <h2 class="kadisoka-orange section-heading">About me</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-xl-4"></div>
         <div class="col-xl-6 mx-auto text-left">
-          <p class="paddings text-box text-faded mb-4">Hej mit navn er Casper Elbech og jeg er en freelance kok, som kommer ud til private arrangement og festivals. Så kan jeg dele min kærligheden til Liège vafler med andre. Du kan kontakte mig læmgere nede eller du kan læse mere om min passion. .<br>
-            <a href="#" data-toggle="modal" data-target="#about-me-modal" class="orange-button btn btn-light btn-xl">Læs mere</a></p>
+          <p class="paddings text-box text-faded mb-4">Hello, my name is Casper Elbech and I am a freelance waffle chef that cooks in private events and festivals so that I can share my love of the Liège waffle with others. You can contact me below or continue reading about my passion.<br>
+            <a href="#" data-toggle="modal" data-target="#about-me-modal" class="orange-button btn btn-light btn-xl">Read more</a></p>
         </div>
         <!-- About Me Expanded (Modal) -->
         <div class="modal fade" id="about-me-modal">
@@ -138,16 +138,14 @@ if (!$errName && !$errEmail && !$errMessage) {
               
               <!-- Modal body -->
               <div class="paddings modal-body">
-                <article>
-                <p> Min vaffel passion begyndte for tre år siden, hvor jeg Caspar Elbech besøgte Belgien for   første gang. Det var ikke smagen af vafler, da fik mig til dertil. 
+                          <article>
+                <p>My waffle-passion began three years ago when I, Casper Elbech, came to visit Belgium for the first time. Though it was not the taste of waffles that drove me there.<br>
                   <br>
+                  You see, when I first arrived in Belgium, I didn’t even like waffles – but that quickly changed. I was surprised to discover that the Belgian waffles are not as sweet and bland as the ones I was used to from home. Afterwards the thoughts of introducing Denmark to these delicious waffles began to intrigue me.<br>
                   <br>
-                  Da jeg ankom til Belgien, kunne jeg ikke engang li vafler, men det ændrede sig hurtig, jeg blev overrasket over at finde ud af at belgiske vafler ikke er så søde og mild som den vi har herhjemme.  Efterfølgende poppede tanken flere gange op, på at introducere disse vidunderlige vafler til Danmark.  <br>
+                  So, in the fall of 2016, I was given the opportunity to present those waffles to Master Chef Jesper Koch, gastronomic Chef at Aarhus Central Food Market. Then, things started moving really fast for me and a few months later I had quit my job and began my waffle-adventure.<br>
                   <br>
-                  Så i efteråret 2016. Fik jeg muligheden for præsentere disse vafler for master chef Jesper Koch, gastromi chef ved Aarhus Central Food Market. Derefter gik tingene meget stærkt for mig og få måneder senere, havde jeg sagt mit job op og begyndte mit vaffel eventyr.   
-                  <br>
-                  <br>
-                  Se artikel om mig fra Aarhus Update:<br>
+                  See the article about me in Aarhus Update:<br>
                   <a href="http://aarhusupdate.dk/liege-aarhus-anmeldelse/">http://aarhusupdate.dk/liege-aarhus-anmeldelse/</a></p>
                 </article>
               </div>
@@ -168,14 +166,14 @@ if (!$errName && !$errEmail && !$errMessage) {
     <div class="container">
       <div class="row">
         <div class="col-xl-5 mx-auto">
-          <h2 class="kadisoka-orange section-heading">Mit produkt</h2>
+          <h2 class="kadisoka-orange section-heading">My product</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-xl-2"></div>
         <div class="col-xl-6 text-left">
-          <p class="paddings text-box text-faded mb-4">For belgiske mennesker er vafler mere end bare en snack - de er en national skat. I hver region har de deres egen opskrifter, som er gået fra generation til generation. <br>
-            <a href="#" data-toggle="modal" data-target="#my-product-modal" class="orange-button btn btn-light btn-xl">Læs mere</a></p>
+          <p class="paddings text-box text-faded mb-4">To the Belgian people, waffles are more than just a snack – they are a national treasure. Every region has their own recipe, which they pass down from generation to generation.<br>
+            <a href="#" data-toggle="modal" data-target="#my-product-modal" class="orange-button btn btn-light btn-xl">Read more</a></p>
         </div>
         <!-- My product Expanded (Modal) -->
         <div class="modal fade" id="my-product-modal">
@@ -184,17 +182,17 @@ if (!$errName && !$errEmail && !$errMessage) {
               
               <!-- Modal Header -->
               <div class="modal-header">
-                <h2 class="paddings-modal-header kadisoka-orange modal-title">Mit produkt</h2>
+                <h2 class="paddings-modal-header kadisoka-orange modal-title">My product</h2>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
               
               <!-- Modal body -->
               <div class="paddings modal-body">
                 <article>
-                <p>For belgiske mennesker er vafler mere end bare en snack – de er nationalt skat. I hver region har de deres egen opskrifter, som er gået fra generation til generation. <br>
+                <p>To the Belgian people, waffles are more than just a snack – they are a national treasure. Every region has their own recipe, which they pass down from generation to generation.<br>
                   <br>
-                  Jeg har været så heldig med at fået en opskrift fra den østlige region, Liege. Der er vaflerne karakteriseret med at man bruger en speciel perle sukker som bidrager til den dejlige lækre karamelliseret skorpe. Mine vafler bliver serveret alt naturlig som bær flødeskum, Belgisk chokolade eller pocherede æg, bacon og karse. </p>
-                </article>
+                  I have been blessed with the ability to collect a recipe from the eastern region of Belgium; Liège. There, the waffles are characterized by a special pearl sugar that contributes to the delicious caramelized crust. My waffles are served all natural, with berry cream, Belgian chocolate or a poached egg, bacon and garden cress.</p>
+                  </article>
               </div>
             </div>
           </div>
@@ -214,8 +212,8 @@ if (!$errName && !$errEmail && !$errMessage) {
       <div class="row">
         <div class="col-xl-6"></div>
         <div class="col-xl-6 mx-auto">
-          <h2 class="kadisoka-orange section-heading">Proces</h2>
-          <p>Se hvordan mine vafler bliver lavet fra bunden af. </p>
+          <h2 class="kadisoka-orange section-heading">Process</h2>
+          <p>See how my waffles are being made from the scratch.</p>
         </div>
       </div>
       <div class="row">
@@ -241,12 +239,12 @@ if (!$errName && !$errEmail && !$errMessage) {
         <div class="col-xl-3"></div>
         <div class="col-xl-5">
           <ul class="paddings text-box text-faded mb-4">
-            <li>• Klassisk vaffel.</li>
-            <li>• Vaffel med chokolade</li>
-            <li>• Vaffel med topping</li>
-            <li>• Vaffel med hjemmelavet is</li>
-            <li>• Vaffel med bacon og pocherede æg</li>
-            <li>• Belgisk perle sukker</li>
+            <li>• Classic waffle</li>
+            <li>• Waffle with chocolate</li>
+            <li>• Waffle with topping</li>
+            <li>• Waffle with homemade icecream</li>
+            <li>• Waffle with bacon and pouched egg</li>
+            <li>• Belgian pearl sugar</li>
           </ul>
         </div>
                         <div class="mobile-pics row">
@@ -264,16 +262,16 @@ if (!$errName && !$errEmail && !$errMessage) {
        <div class="row">
         <div class="col-xl-1"></div>
         <div class="col-xl-5 mx-auto text-center">
-          <h2 id="testimonials-heading" class="text-center kadisoka-orange section-heading">Anbefalinger</h2>
+          <h2 id="testimonials-heading" class="text-center kadisoka-orange section-heading">Testimonials</h2>
       </div>
   <div class="card col-xl-11 mt-2">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="100000">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="w-100 carousel-inner" role="listbox">
           <div class="carousel-item active">
             <div class="carousel-caption">
               <div class="row">
                 <div class="col-xl-12 mx-auto">
-                  <blockquote class="paddings text-box text-faded mb-4 review">“Gode vafler og fantastic service! Så sprøde og friske fra vaffeljernet og med flødeskum eller chokolade.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Ole Dahl Valgreen, 9 November 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <blockquote class="paddings text-box text-faded mb-4 review">“Great waffles and amazing service! So crispy and fresh out of the iron, with cream or chocolate.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Ole Dahl Valgreen, 9 November 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
@@ -289,7 +287,7 @@ if (!$errName && !$errEmail && !$errMessage) {
             <div class="carousel-caption">
               <div class="row">
                 <div class="col-xl-12 mx-auto">
-                  <blockquote class="paddings text-box text-faded mb-4 review">“Der er ikke meget at sige mere end: Yum! Du gør det godt, Casper.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Camilla Bloch Vorum, 19 November 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <blockquote class="paddings text-box text-faded mb-4 review">“There is not much to say beyond: YUM! You are doing well, Casper.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Camilla Bloch Vorum, 19 November 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
@@ -305,7 +303,7 @@ if (!$errName && !$errEmail && !$errMessage) {
             <div class="carousel-caption">
               <div class="row">
                 <div class="col-xl-12 mx-auto">
-                  <blockquote class="paddings text-box text-faded mb-4 review">“Disse vafler er de bedste jeg har  smagt.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Amanda Nielsen, 15 October 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <blockquote class="paddings text-box text-faded mb-4 review">“These waffles are the best waffles I have ever tasted.” <br><a href="https://www.facebook.com/pg/liegevaffel/reviews/?ref=page_internal">- Amanda Nielsen, 15 October 2016.</a><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
@@ -333,8 +331,8 @@ if (!$errName && !$errEmail && !$errMessage) {
   <div class="container">
     <div class="row">
         <div class="col-xl-5 mx-auto text-center">
-          <h2 id="testimonials-heading" class="text-center kadisoka-orange section-heading">Tidsplan</h2>
-          <p>Her kan du se hvilke dage jeg er ledig til at blive hyrert.</p>
+          <h2 id="testimonials-heading" class="text-center kadisoka-orange section-heading">Schedule</h2>
+          <p>Here you can see on which days I am available for hiring.</p>
       </div>
     </div>
           <div class="row">
@@ -352,8 +350,8 @@ if (!$errName && !$errEmail && !$errMessage) {
 <div class="container">
       <div class="row">
         <div class="col-xl-8 mx-auto text-center">
-          <h2 class="text-center kadisoka-orange section-heading">Kontakt mig</h2>
-          <p>Du er velkommen til at skrive en mail til mig, med en beskrivelse af dine ønsker og jeg vil kontakte jer inden for 24 timer. Håber vi ses snart !             :)</p>
+          <h2 class="text-center kadisoka-orange section-heading">Contact me</h2>
+          <p>You are welcome to write me an e-mail with a description of your wishes and I will contact with you within 24 hours. Hope to see you soon! :)</p>
         </div>
       </div>
 	<div class="row">
@@ -389,8 +387,8 @@ if (!$errName && !$errEmail && !$errMessage) {
 <!-- footer -->
 <footer>
               <div id="language" class="text-center">
-                <a href="en_index.php" hreflang="en"><img src="img/english-flag-icon.ico" alt="english-flag-icon"></a>
-          <a href="index.php" hreflang="da"><img src="img/danish-flag-icon.ico" alt="danish-flag-icon"></a>
+                <a href="index.php" hreflang="en"><img src="img/english-flag-icon.ico" alt="english-flag-icon"></a>
+          <a href="dk_index.php" hreflang="da"><img src="img/danish-flag-icon.ico" alt="danish-flag-icon"></a>
         </div>
 		<ul id="footer-ul" class="text-center">
               <li"><a href="https://www.facebook.com/liegevaffel/"><img src="img/facebook_icon1.png" alt="Facebook Icon"/></a></li>
@@ -402,7 +400,7 @@ if (!$errName && !$errEmail && !$errMessage) {
 			</ul>
 			<div class="row">
 				<div class="col-xl-3 mx-auto text-center">
-					         <small>
+					<small>
             Gabriel Florin-Pojum, Eivydas Barysas, Thomas Aagaard Poulsen, Dāvis Ābols
             <br>&copy; All rights reserved, 2017</small>
 				</div>
