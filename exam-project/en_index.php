@@ -41,6 +41,9 @@ if (!$errName && !$errEmail && !$errMessage) {
 <meta name="author" content="Group 5 - Eivydas Barysas, Thomas Aagard Poulsen, Gabriel-Florin Pojum, Dāvis Ābols">
 <title>Liège waffles</title>
 
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <!-- Bootstrap CSS -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -52,6 +55,13 @@ if (!$errName && !$errEmail && !$errMessage) {
 </head>
 
 <body>
+    <div class="loader"></div>
+  <script type="text/javascript">
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+</script>
+<!-- Wrapper -->
 <div class="wrapper">
   <main role="main">
   <!-- Intro screen -->
@@ -387,8 +397,8 @@ if (!$errName && !$errEmail && !$errMessage) {
 <!-- footer -->
 <footer>
               <div id="language" class="text-center">
-                <a href="index.php" hreflang="en"><img src="img/english-flag-icon.ico" alt="english-flag-icon"></a>
-          <a href="dk_index.php" hreflang="da"><img src="img/danish-flag-icon.ico" alt="danish-flag-icon"></a>
+                <a href="en_index.php" hreflang="en"><img src="img/english-flag-icon.ico" alt="english-flag-icon"></a>
+          <a href="index.php" hreflang="da"><img src="img/danish-flag-icon.ico" alt="danish-flag-icon"></a>
         </div>
 		<ul id="footer-ul" class="text-center">
               <li"><a href="https://www.facebook.com/liegevaffel/"><img src="img/facebook_icon1.png" alt="Facebook Icon"/></a></li>
@@ -406,10 +416,8 @@ if (!$errName && !$errEmail && !$errMessage) {
 				</div>
 			</div>
     </main>
+    <!-- Wrapper end -->
 </div>
-
-<!-- jQuery --> 
-<script src="jquery/jquery.min.js"></script> 
 
 <!-- Plugin JavaScript --> 
 <script src="jquery-easing/jquery.easing.min.js"></script>

@@ -41,6 +41,9 @@ if (!$errName && !$errEmail && !$errMessage) {
 <meta name="author" content="Group 5 - Eivydas Barysas, Thomas Aagard Poulsen, Gabriel-Florin Pojum, Dāvis Ābols">
 <title>Liège waffles</title>
 
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+
 <!-- Bootstrap CSS -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -52,6 +55,13 @@ if (!$errName && !$errEmail && !$errMessage) {
 </head>
 
 <body>
+    <div class="loader"></div>
+  <script type="text/javascript">
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+</script>
+  <!-- Wrapper -->
 <div class="wrapper">
     <main role="main">
   <!-- Intro screen -->
@@ -340,7 +350,7 @@ if (!$errName && !$errEmail && !$errMessage) {
           <div class="row">
          <div class="col-xl-8 mx-auto">
           <div class="embed-responsive embed-responsive-16by9">
- <iframe id="g-calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;hl=da&amp;bgcolor=%23cc9933&amp;src=liegevaffel%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FRiga" style="border:solid 1px #777" width="800" height="240" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=abolzzy%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FStockholm" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 			 </div>
 	</div>
 </div>
@@ -408,10 +418,8 @@ if (!$errName && !$errEmail && !$errMessage) {
 				</div>
 			</div>
     </main>
+      <!-- Wrapper end -->
 </div>
-
-<!-- jQuery --> 
-<script src="jquery/jquery.min.js"></script> 
 
 <!-- Plugin JavaScript --> 
 <script src="jquery-easing/jquery.easing.min.js"></script>
